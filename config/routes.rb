@@ -1,4 +1,31 @@
 Rails.application.routes.draw do
+
+  #using resources :coupons auto-generates all of the restful routes
+  resources :coupons, only: [:index, :new, :show, :create]
+
+     
+
+    #Restful Routes for Coupons
+
+    # get '/coupons' #index
+    # get '/coupons', to: 'coupons#index' #rails
+
+    # get '/coupons/new' #new
+    # get '/coupons', to: 'coupons#new' #rails
+
+    # get '/coupons/:id' #show
+
+    # get '/coupons/:id/edit' #edit
+
+
+    # post '/coupons' #create
+
+
+    # patch '/coupons/:id' #update
+
+    # delete '/coupons/:id' #destroy
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -33,10 +33,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'byebug'
+  gem 'pry'
   gem 'spring'
   gem 'rspec-rails','>= 3.5.2'
   gem "factory_bot_rails"
   gem 'capybara'
   gem 'database_cleaner'
+  gem 'awesome_print'
 end
